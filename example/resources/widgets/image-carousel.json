@@ -1,0 +1,28 @@
+{
+  "uri": "wip://image-carousel",
+  "input_parameters_schema": {
+    "type": "object",
+    "properties": {
+      "ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "A list of unique identifiers mapping to each image URL"
+      }
+    },
+    "required": [
+      "ids"
+    ],
+    "additionalProperties": false,
+    "description": "Parameters required to render an image carousel, mapping ids with image URLs and their optional captions."
+  },
+  "capabilities": [
+    "full-screen",
+    "menu"
+  ],
+  "name": "Image Carousel",
+  "description": "This widget helps users visualize multiple images of products in an interactive carousel, providing an enhanced user interface for exploring items in detail. It improves the experience by allowing users to easily browse through different product views or variations. The image carousel is particularly useful for  galleries displaying various options of an item, or showcasing products from multiple angles in catalog or portfolio layouts.",
+  "use_cases_hints": "It should be selected when the user requests to see a product or a set of products in detail. ",
+  "version": "1.0.0"
+}

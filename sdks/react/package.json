@@ -1,0 +1,22 @@
+{
+  "name": "@mcp-wip/react-widget-sdk",
+  "version": "1.0.0",
+  "description": "MCP-WIP bridge for React",
+  "main": "index.ts",
+  "files": [
+    "*.ts",
+    "*.tsx"
+  ],
+  "types": "index.ts",
+  "peerDependencies": {
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alessandro Eugeni"
+}

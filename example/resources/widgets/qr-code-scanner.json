@@ -1,0 +1,39 @@
+{
+  "uri": "wip://qr-code-scanner",
+  "input_parameters_schema": {
+    "type": "object",
+    "properties": {
+      "camera_permission": {
+        "type": "boolean",
+        "description": "Indicates whether the user has granted permission to access the device camera."
+      },
+      "expected_format": {
+        "type": "string",
+        "enum": [
+          "qr",
+          "barcode",
+          "datamatrix"
+        ],
+        "description": "Defines the expected code format to scan for better accuracy."
+      },
+      "on_scan_action": {
+        "type": "string",
+        "description": "The action or callback URI to trigger once a product code is successfully scanned."
+      }
+    },
+    "required": [
+      "camera_permission"
+    ],
+    "additionalProperties": false,
+    "description": "Parameters required to activate a QR or barcode scanner to identify and process product codes."
+  },
+  "capabilities": [
+    "camera-access",
+    "real-time-scan",
+    "code-detection"
+  ],
+  "name": "Qr code scanner",
+  "description": "This widget enables real-time scanning of QR codes or barcodes using the device camera. It is designed to identify product codes quickly and can trigger subsequent actions such as product lookups, inventory updates, or redirection to detailed product views. The scanner enhances workflows that involve physical product interaction, such as logistics, retail, or manufacturing.",
+  "use_cases_hints": "Select this widget when the user needs to scan a QR code or barcode to identify or access product-related information.",
+  "version": "1.0.0"
+}

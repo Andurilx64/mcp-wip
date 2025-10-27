@@ -1,0 +1,48 @@
+{
+  "uri": "wip://stock-level-inspector",
+  "input_parameters_schema": {
+    "type": "object",
+    "properties": {
+      "sku": {
+        "type": "string",
+        "description": "The Stock Keeping Unit (SKU) identifier for the product to inspect."
+      },
+      "stock_by_size": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "size": {
+              "type": "string",
+              "description": "The size variant (e.g., 39, 40, M, L, etc.)"
+            },
+            "stock": {
+              "type": "integer",
+              "description": "Stock level for this size"
+            }
+          },
+          "required": [
+            "size",
+            "stock"
+          ],
+          "additionalProperties": false
+        },
+        "description": "Array of objects representing size and corresponding stock level"
+      }
+    },
+    "required": [
+      "sku"
+    ],
+    "additionalProperties": false,
+    "description": "Parameters required to visualize the current stock levels of a given SKU across one or more warehouses or storage locations."
+  },
+  "capabilities": [
+    "real-time",
+    "chart-view",
+    "alerting"
+  ],
+  "name": "Stock Level Inspector",
+  "description": "This widget allows users to inspect the current stock levels of a specific SKU across one or multiple warehouses. It supports real-time updates and visual indicators to highlight shortages or excess inventory. The stock level inspector enhances inventory management workflows and provides insights for restocking and logistics planning.",
+  "use_cases_hints": "Select this widget when the user requests to check, monitor, or compare inventory quantities of specific SKUs.",
+  "version": "1.0.0"
+}

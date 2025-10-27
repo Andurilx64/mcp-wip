@@ -1,0 +1,63 @@
+{
+  "uri": "wip://calendar",
+  "input_parameters_schema": {
+    "type": "object",
+    "properties": {
+      "initial_date": {
+        "type": "string",
+        "format": "date",
+        "description": "The initial date to display when the calendar opens."
+      },
+      "events": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "start": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "end": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "start",
+            "end"
+          ]
+        },
+        "description": "A list of existing events or meetings to render in the calendar."
+      },
+      "allow_meeting_creation": {
+        "type": "boolean",
+        "description": "If true, the user can create new meetings or events directly from the calendar."
+      }
+    },
+    "required": [
+      "initial_date"
+    ],
+    "additionalProperties": false,
+    "description": "Parameters required to display a calendar interface with optional meeting creation and event visualization capabilities."
+  },
+  "capabilities": [
+    "date-picker",
+    "event-management",
+    "interactive-ui"
+  ],
+  "name": "Calendar Widget",
+  "description": "This widget provides a full-featured calendar view that allows users to browse dates, view events, and schedule new meetings. It supports interactive event management and integrates seamlessly with scheduling or task management systems. The calendar widget enhances productivity by offering a clear and intuitive interface for managing appointments and availability.",
+  "use_cases_hints": "Use this widget when the user requests to view a calendar, pick a date, or schedule or review meetings.",
+  "version": "1.0.0"
+}
