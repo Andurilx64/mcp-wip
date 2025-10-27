@@ -1,6 +1,9 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/f783bf75-d51b-4d76-8448-608411dea41b" width=400>
+<img src="https://github.com/user-attachments/assets/1bb2e7f0-17df-480b-90a3-000c3703d1ae" width=400>
 </p>
+
+
+
 
 # MCP-WIP: MCP Widget Integration Protocol
 
@@ -9,8 +12,9 @@
 > This in experimental project in its early development stage. Treat it as an alpha. Any contributions to the project are well received!
 
 
+
 <p align="center">
-<video src="https://github.com/user-attachments/assets/cf81d1e1-a0e4-4610-ae4d-7a0e65e9b5a9"></video>
+<video src="https://github.com/user-attachments/assets/10d421f9-b6c2-4791-978c-68ac9aafef72"></video>
 </p>
 
 ![Full HD video](example/assets/demo.mp4)
