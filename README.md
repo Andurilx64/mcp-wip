@@ -1,7 +1,6 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/1bb2e7f0-17df-480b-90a3-000c3703d1ae" width=400>
+<img src="https://github.com/user-attachments/assets/f9348a9e-0968-4e76-b40d-4af0c1294cc4" width=300>
 </p>
-
 
 
 
